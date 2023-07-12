@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scan QR Code</title>
-  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <title>QR Code and Device ID</title>
   <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
     #qrcode {
       width: 300px;
       height: 300px;
-      margin: 0 auto;
+      margin: 50px auto;
+    }
+
+    #device-id {
+      margin-top: 30px;
+      font-size: 24px;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Scan the QR code to open your browser</h1>
+  <h1>Scan the QR Code</h1>
 
   <div id="qrcode"></div>
 
-  <h2>Device ID:</h2>
   <p id="device-id"></p>
 
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
